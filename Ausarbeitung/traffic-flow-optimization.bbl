@@ -1,0 +1,104 @@
+\begin{thebibliography}{10}
+
+\bibitem{6799827}
+A.~Ahmed, R.~Arshad, S.~Mahmud, G.~Khan, and H.~Al-Raweshidy.
+\newblock Evaluation of earliest deadline based schedulers for reduction of
+  traffic congestion in dense urban areas.
+\newblock In {\em Connected Vehicles and Expo (ICCVE), 2013 International
+  Conference on}, pages 404--409, Dec 2013.
+
+\bibitem{6856456}
+J.~Brembeck and C.~Winter.
+\newblock Real-time capable path planning for energy management systems in
+  future vehicle architectures.
+\newblock In {\em Intelligent Vehicles Symposium Proceedings, 2014 IEEE}, pages
+  599--604, June 2014.
+
+\bibitem{ferreira2010self}
+M.~Ferreira, R.~Fernandes, H.~Concei{\c{c}}{\~a}o, W.~Viriyasitavat, and O.~K.
+  Tonguz.
+\newblock Self-organized traffic control.
+\newblock In {\em Proceedings of the seventh ACM international workshop on
+  VehiculAr InterNETworking}, pages 85--90. ACM, 2010.
+
+\bibitem{gradinescu2007adaptive}
+V.~Gradinescu, C.~Gorgorin, R.~Diaconescu, V.~Cristea, and L.~Iftode.
+\newblock Adaptive traffic lights using car-to-car communication.
+\newblock In {\em Vehicular Technology Conference, 2007. VTC2007-Spring. IEEE
+  65th}, pages 21--25. IEEE, 2007.
+
+\bibitem{5410169}
+G.~HongCheng, W.~Qing, and F.~Bing-Quan.
+\newblock Graphical route information panel and macroscopic simulation based
+  investigation of its control benefits.
+\newblock In {\em Control and Automation, 2009. ICCA 2009. IEEE International
+  Conference on}, pages 1454--1459, Dec 2009.
+
+\bibitem{6856515}
+Q.~Jin, G.~Wu, K.~Boriboonsomsin, and M.~Barth.
+\newblock Improving traffic operations using real-time optimal lane selection
+  with connected vehicle technology.
+\newblock In {\em Intelligent Vehicles Symposium Proceedings, 2014 IEEE}, pages
+  70--75, June 2014.
+
+\bibitem{sumo}
+D.~Krajzewicz, G.~Hertkorn, C.~R{\"o}ssel, and P.~Wagner.
+\newblock Sumo (simulation of urban mobility).
+\newblock In {\em Proc. of the 4th middle east symposium on simulation and
+  modelling}, pages 183--187, 2002.
+
+\bibitem{6685576}
+Z.~Liang and Y.~Wakahara.
+\newblock City traffic prediction based on real-time traffic information for
+  intelligent transport systems.
+\newblock In {\em ITS Telecommunications (ITST), 2013 13th International
+  Conference on}, pages 378--383, Nov 2013.
+
+\bibitem{6799873}
+H.~Noori and M.~Valkama.
+\newblock Impact of vanet-based v2x communication using ieee 802.11p on
+  reducing vehicles traveling time in realistic large scale urban area.
+\newblock In {\em Connected Vehicles and Expo (ICCVE), 2013 International
+  Conference on}, pages 654--661, Dec 2013.
+
+\bibitem{6856462}
+E.~Paikari, S.~Tahmasseby, and B.~Far.
+\newblock A simulation-based benefit analysis of deploying connected vehicles
+  using dedicated short range communication.
+\newblock In {\em Intelligent Vehicles Symposium Proceedings, 2014 IEEE}, pages
+  980--985, June 2014.
+
+\bibitem{6856591}
+C.~Ruhhammer, N.~Hirsenkorn, F.~Klanner, and C.~Stiller.
+\newblock Crowdsourced intersection parameters: A generic approach for
+  extraction and confidence estimation.
+\newblock In {\em Intelligent Vehicles Symposium Proceedings, 2014 IEEE}, pages
+  581--587, June 2014.
+
+\bibitem{1614269.1614274}
+H.~Schumacher, C.~Priemer, and E.~N. Slottke.
+\newblock A simulation study of traffic efficiency improvement based on
+  car-to-x communication.
+\newblock In {\em Proceedings of the Sixth ACM International Workshop on
+  VehiculAr InterNETworking}, VANET '09, pages 13--22, New York, NY, USA, 2009.
+  ACM.
+
+\bibitem{simulator2010user}
+M.~V.~E. Simulator.
+\newblock User guide for moves2010a.
+\newblock Technical report, EPA-420-B, 2010.
+
+\bibitem{5625236}
+G.~Slager and M.~Milano.
+\newblock Urban traffic control system using self-organization.
+\newblock In {\em Intelligent Transportation Systems (ITSC), 2010 13th
+  International IEEE Conference on}, pages 255--260, Sept 2010.
+
+\bibitem{6338840}
+G.~Wu, K.~Boriboonsomsin, L.~Zhang, and M.~Barth.
+\newblock Simulation-based benefit evaluation of dynamic lane grouping
+  strategies at isolated intersections.
+\newblock In {\em Intelligent Transportation Systems (ITSC), 2012 15th
+  International IEEE Conference on}, pages 1038--1043, Sept 2012.
+
+\end{thebibliography}
