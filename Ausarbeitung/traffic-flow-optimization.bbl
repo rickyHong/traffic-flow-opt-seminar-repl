@@ -19,6 +19,13 @@ J.~Brembeck and C.~Winter.
 \newblock In {\em Intelligent Vehicles Symposium Proceedings, 2014 IEEE}, pages
   599--604, June 2014.
 
+\bibitem{6957666}
+B.~Cai, Z.~Zheng, W.~ShangGuan, and J.~Wang.
+\newblock Unsignalized cooperative optimization control method based on vehicle
+  speed guidance and information interaction.
+\newblock In {\em Intelligent Transportation Systems (ITSC), 2014 IEEE 17th
+  International Conference on}, pages 57--62, Oct 2014.
+
 \bibitem{ferreira2010self}
 M.~Ferreira, R.~Fernandes, H.~Concei{\c{c}}{\~a}o, W.~Viriyasitavat, and O.~K.
   Tonguz.
@@ -46,11 +53,25 @@ Q.~Jin, G.~Wu, K.~Boriboonsomsin, and M.~Barth.
 \newblock In {\em Intelligent Vehicles Symposium Proceedings, 2014 IEEE}, pages
   70--75, June 2014.
 
+\bibitem{6776965}
+O.~Kaiwartya and S.~Kumar.
+\newblock Geocast routing: Recent advances and future challenges in vehicular
+  adhoc networks.
+\newblock In {\em Signal Processing and Integrated Networks (SPIN), 2014
+  International Conference on}, pages 291--296, Feb 2014.
+
 \bibitem{sumo}
 D.~Krajzewicz, G.~Hertkorn, C.~R{\"o}ssel, and P.~Wagner.
 \newblock Sumo (simulation of urban mobility).
 \newblock In {\em Proc. of the 4th middle east symposium on simulation and
   modelling}, pages 183--187, 2002.
+
+\bibitem{lee2012development}
+J.~Lee and B.~Park.
+\newblock Development and evaluation of a cooperative vehicle intersection
+  control algorithm under the connected vehicles environment.
+\newblock {\em Intelligent Transportation Systems, IEEE Transactions on},
+  13(1):81--90, 2012.
 
 \bibitem{6685576}
 Z.~Liang and Y.~Wakahara.
@@ -65,6 +86,12 @@ H.~Noori and M.~Valkama.
   reducing vehicles traveling time in realistic large scale urban area.
 \newblock In {\em Connected Vehicles and Expo (ICCVE), 2013 International
   Conference on}, pages 654--661, Dec 2013.
+
+\bibitem{6263090}
+C.~Olaverri-Monreal, P.~Gomes, M.~Silveria, and M.~Ferreira.
+\newblock In-vehicle virtual traffic lights: A graphical user interface.
+\newblock In {\em Information Systems and Technologies (CISTI), 2012 7th
+  Iberian Conference on}, pages 1--6, June 2012.
 
 \bibitem{6856462}
 E.~Paikari, S.~Tahmasseby, and B.~Far.
@@ -98,6 +125,12 @@ G.~Slager and M.~Milano.
 \newblock Urban traffic control system using self-organization.
 \newblock In {\em Intelligent Transportation Systems (ITSC), 2010 13th
   International IEEE Conference on}, pages 255--260, Sept 2010.
+
+\bibitem{systematics2005traffic}
+C.~Systematics.
+\newblock {\em Traffic congestion and reliability: Trends and advanced
+  strategies for congestion mitigation}, volume~6.
+\newblock Federal Highway Administration, 2005.
 
 \bibitem{6338840}
 G.~Wu, K.~Boriboonsomsin, L.~Zhang, and M.~Barth.
