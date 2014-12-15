@@ -49,6 +49,7 @@
 \documentclass{sig-alternate}
 %Deutsch: Kommentar hier entfernen
 %\documentclass{sig-alternate-de}
+\usepackage{multirow}
 
 \begin{document}
 %
@@ -119,40 +120,80 @@ Thomas Leutheusser\\
 % number that will appear in the \additionalauthors section.
 
 \maketitle
-\begin{abstract}
 
-\end{abstract}
-
-\keywords{}
+\abstract{
+	Traffic congestion is an increasingly factor in todays traffic systems. As current traffic information system can only provide a coarse overview over the current traffic situation, the newly emerged technology of Connected Vehicles and its applications to traffic flow optimization is investigated. Vehicular ad-hoc networks and their characteristics are briefly described followed by 6 different traffic optimization techniques, which aim to improve transport statistics such as flow rate, travel times and road safety at different types of granularity.    
+}
+\keywords{Intelligent Transportation Systems (ITS), Connected Vehicles, V2X, Traffic Flow, Advanced traveler information system (ATIS)}
 
 \section{Introduction}
-Upcoming technology of connected vehicles hitting consumer market soon (TODO: Quelle finden). What are ITS. Overview of benefits of ITS especially as a measure against traffic congestion, reduced travel times and resulting reduction of emissions.
+According to the 2012 Urban Mobility Report of the Texas A\&M Transportation Institute\cite{schrank2012tti} consisting of data from 498 U.S. urban areas, traffic congestion is the major problem for mobility in urban areas with an estimate of 2.9 billion gallons of wasted fuel, 5.5 billion hours more travel time and an assumed cost of \$121 billion. In the EU traffic congestion accounts for an estimate of 80 billion euros a year, according to the European transport policy white paper for 2010\cite{eutraffic}.\\
 In order to solve traffic related problems the Federal Highway Administration in the U.S. proposed and defined three general tactics\cite{systematics2005traffic}:
 \begin{itemize}
-\item Work on current capacity of roads and extend them
-\item Extension of alternative transportation that require less resources (e.g. non-automotive transport)
-\item More efficient using of current capacities of cities and roads
+\item Work on current capacity of roads and extend them.
+\item Extension of alternative transportation that require less resources (e.g. non-automotive transport).
+\item More efficient using of current capacities of cities and roads.
 \end{itemize}
-In this paper the 
+Most of the time it is not possible to extend the road network with additional or bigger streets because of the limited available space. Thus the focus is mainly set on the more efficient usage of the current capacities. \\
+Intelligent Transportation Systems (ITS) apply information and communication technologies to provide innovative services relating to different modes of transport and traffic management for users to be better informed and make safer, more coordinated and efficient use of the current transport networks.\\ 
+Many modern driver assistance systems are already based on an internet connection between cars and a back-end server system. One example for these driver assistance systems is the representation of current traffic information within vehicle navigation systems (e.g. BMW Real Time Traffic Information\footnote{http://www.bmw.de/de/topics/faszination-bmw/connecteddrive/services-apps/rtti.html}) or through the web browser (e.g. Google maps traffic overlay) as seen in Figure \ref{fig:google1}.
+\begin{figure} 
+\centering
+\epsfig{file=google_traffic1.png, width=3.3in}
+\caption{Google maps traffic overlay}
+\label{fig:google1}
+\end{figure}
+These mentioned traffic information systems lack the ability to control the traffic on a finer granularity as they can only provide an overview over the current traffic situation. \\
+These deficits can be counteracted with Connected Vehicles technology (CV), a relatively new field of study in Intelligent Transportation Systems. Vehicles communicate over different protocols with other vehicles (V2V), infrastructures (V2I) or both (V2X) to form a vehicular ad-hoc network (VANET), where detailed traffic information can be exchanged timely and efficiently. These allow for new types of transport applications ranging from traffic safety systems to infotainment systems. This work focuses on the optimization of traffic flow and congestion relief applications using the mentioned V2X technology, by giving an overview over implementations for different types of techniques.   \\
+At first the CV technology and its components are outlined. Then different techniques for traffic flow optimization are explained, followed by a brief discussion of the applications and their usability.  
+
+\section{Connected Vehicles}
+Vehicular ad-hoc networks are an application of mobile ad-hoc networks but have their own distinct characteristics which can be summarized as\cite{al2014comprehensive}:
+\begin{description}
+\item[High mobility] The nodes in VANETs are usually moving at high speeds in "random" directions, but are constrained by the road topology and layout. 
+\item[Changing network topology] Due to the high mobility and speeds of vehicles the network topology tends to change frequently. The lifetime of the link between vehicles is affected by the radio communication range and the direction of the vehicles. These rapid changes in link connectivity cause the effective network diameter to be small, while many paths are disconnected before they can be utilized.
+\item[Variable network density] The network density in VANET varies depending on the traffic density, which can be very high in the case of a traffic jam or low, as in suburban traffic.
+\item[Power constraints] Compared to mobile ad-hoc networks, the power in VANET is not critical because vehicles have the ability to provide continuous power via the long life battery. 
+\item[High computational ability] Vehicles can be equipped with a sufficient number of sensors and computational resources such as processors, large memory capacity, advanced antenna technology and GPS. This increases the computational power of the nodes of a VANET which help obtaining reliable wireless communication and accurate information of its position, speed and direction.
+\end{description}
+To support Intelligent Transportation Systems the IEEE 1609 Family of Standards for Wireless Access in Vehicular Environments (WAVE) have been created. The WAVE standards define an architecture and complementary standardized set of protocols, services and interfaces that collectively enable secure wireless V2X communication. WAVE relies on the IEEE 802.11p standard for the lower physical (PHY) and medium access control (MAC) layers. 802.11p defines a way to exchange data without the need to establish a basic service set as in the 802.11 standards to cope with the high mobility and short link lifetimes between vehicles or infrastructures. Therefore authentication and data confidentiality have to be provided by the upper layers (e.g IEEE 1609). 802.11p uses the 5.9GHz band. \\
+Using these communication standards it is then possible to reliably exchange messages between vehicles and infrastructures which is the foundation for intelligent traffic management systems. 
 \section{Traffic Flow Optimization }
-The main parameters of traffic flow have to be quantified in order to evaluate and compare different traffic flows. Including others these parameters consist of speed, flow, density, mean speed, and headway. Flow describes the rate at which vehicles pass a fixed point in a time interval. Density is the concentration of vehicles over a fixed length of a roadway. Mean speed is divided into time mean speed, which is the arithmetic mean of vehicle speeds passing a point, and space mean speed, which is the harmonic mean of speeds passing a point during a period of time. The headway is the time that elapses between a vehicle and a following vehicle passing a certain point. \\
+The main parameters of traffic flow have to be quantified in order to evaluate and compare different aspects of traffic flow. Including others these parameters consist of speed, flow, density, mean speed, and headway. \textbf{Flow} describes the rate at which vehicles pass a fixed point in a time interval. \textbf{Density} is the concentration of vehicles over a fixed length of a roadway. \textbf{Mean speed} is divided into \textbf{time mean speed}, which is the arithmetic mean of vehicle speeds passing a point, and \textbf{space mean speed}, which is the harmonic mean of speeds passing a point during a period of time. The \textbf{headway} is the time that elapses between a vehicle and a following vehicle passing a certain point. \\
 Traffic flow can be analyzed at three different levels of granularity. Microscopic traffic flow examines individual vehicles and their properties like speed and position. Macroscopic scale investigates traffic flow characteristics such as density, flow and mean speed on a traffic stream. Mesoscopic models allow the study of large areas with applications such as congestion relief through alternative routes. \\
 As a result the types of traffic flow optimization can be applied to different types of granularity. \\
-Microscopic optimizations focus on improving the mean travel time for single vehicles by finding optimal vehicle TODO actions actions such as finding the optimal lane or adjusting the speed to decrease the amount of brake/accelerations actions. These optimizations are discussed in chapter TODO\\
-The goal of macroscopic optimizations is the increase of throughput and reduced travel times for a given traffic stream. They are discussed in section TODO \\
-Mesoscopic optimizations are briefly mentioned in section TODO\\
+Microscopic optimizations focus on improving the mean travel time for single vehicles by finding optimal vehicle actions such as finding the optimal lane or adjusting the speed to decrease the amount of brakes/accelerations. These optimizations are discussed in chapter \ref{microscopic}\\
+The goal of macroscopic optimizations is the increase of throughput and reduced travel times for a given traffic stream. As intersections are the main delay of traffic flows in urban areas the focus is set on uncontrolled and traffic light controlled crossing. These optimizations are discussed in section \ref{macroscopic}.\\
+One application to mesoscopic optimizations is the search for optimal routes through congested traffic which is discussed in section \ref{mesoscopic}.
 
 \subsection{Microscopic Traffic Flow Optimizations}
+The finest granularity of traffic flow optimizations targets single vehicles and their driving activities. Two different techniques to improve the traffic flow are investigated in this section. Firstly the collaborative interaction to find the optimal driving lane in a highway scenario is described in section \ref{laneselection}. The second technique handles the coordinated approach to a lane drop, which is discussed in section \ref{lanedrop}.
 \label{microscopic}
 \subsubsection{Optimal Lane Selection}
 \label{laneselection}
-One driving behavior that can heavily interrupt the flow of traffic are lane changes. The need for lane changes derives from the inequality of desired driving speeds and mandatory lane changes like lane drops or exiting the current road. These lane changes may disrupt the traffic by aggressive maneuvers (i.e. cutting into small gaps). This papers TODO shows that lane changes disrupt the flow by creating a moving bottleneck under congested traffic conditions TODO cite quelle 3 des papers. \\
-Jin et al.\cite{6856515} propose a cooperative real-time lane selection algorithm in which connected vehicles share information to improve the system-wide operation of traffic. Well-coordinated lane changes can help maintain desired speeds and minimize shock wave impacts.  [Zitat Seite 71 Absatz 3] \\
-This is achieved by calculating the optimal lane target for each vehicle based on its location, speed, lane and desired driving speed. These parameters are transmitted from each car to a roadside communication unit (RSU) which can exchange these real-time information within a certain range. The RSU calculates the optimal lane for each vehicle and sends its optimal lane advice. \\
-Jin et al.\cite{6856515} tested the algorithm on a simulated 3-way highway of 2000 m length with one roadside communication unit with 300 meters communication range and connected vehicles with a speed of 50 mp/h using the microscopic simulation tool SUMO\cite{sumo}.In the simulation, the mean travel times of different road congestion levels (50\%, 60\%, ... 100\%) with and without their proposed algorithm were compared. Besides the mean travel times, the reduction of energy consumption and the emission of pollutants was simulated (CO, HC, NOx, PM2.5) with MOVES\cite{simulator2010user} (Motor Vehicle Emission Simulator).\\
-The simulated mean travel time was reduced by 0,57\% at 50\% road congestion, up to 3.79\% improvement (118.4 s to 115.3 s) at 70\% of the maximum density. At higher congestion levels the vehicles could not always find the needed space in their suggested lanes, which reduces the success rate of a lane change. At a level of 0.95\% of the maximum capacity of the road, an improvement of 2.67\% in mean travel times was still detected. \\
+One driving behavior that can heavily interrupt the flow of traffic are lane changes. The need for lane changes derives from the inequality of desired driving speeds and mandatory lane changes like lane drops or exiting the current road. These lane changes may disrupt the traffic by aggressive maneuvers (i.e. cutting into small gaps) and produce shock wave effects which expand to further upstream vehicles. 
+Jin et al.\cite{6856515} propose a cooperative real-time lane selection algorithm named Optimal Lane Selection (OLS) in which connected vehicles share information to improve the system-wide operation of traffic. Well-coordinated lane changes can help maintain desired speeds and minimize shock wave impacts.  \\
+This is achieved by calculating the optimal lane target for each vehicle based on its location, speed, lane and desired driving speed. These parameters are transmitted from each car to a roadside communication unit (RSU) which can exchange these real-time information within a certain range. The RSU calculates the optimal lane for each vehicle and sends its optimal lane advice. The drivers then follow the advice by adjusting their lane in order to decrease the overall mount of needed lane changes afterwards. \\
+Jin et al.\cite{6856515} tested the algorithm on a simulated 3-way highway of 2000 m length with one roadside communication unit with 300 meters communication range and connected vehicles with a speed of 50 mp/h using the microscopic simulation tool SUMO\cite{sumo}. In the simulation, the mean travel times of different road congestion levels (50\%, 60\%, ... 100\%) with and without their proposed algorithm were compared. Besides the mean travel times, the reduction of energy consumption and the emission of pollutants were simulated (CO, HC, NOx, PM2.5) with MOVES\cite{simulator2010user} (Motor Vehicle Emission Simulator).\\ Their simulation results can be seen in Table \ref{table1}. 
+\begin{table}
+\centering
+\caption{Comparison of results on mean travel times (in seconds) between OLS and non OLS scenarios and different vehicle to capacity ratios}
+\begin{tabular}{|l|c|c|c|}
+\hline
+\multirow{2}{*}{V/C} & \multicolumn{2}{c|}{Scenarios} & \multirow{2}{*}{\% Improvement} \\ \cline{2-3}
+                     & NLS Based      & OLS Based     &                                 \\ \hline
+0.5                  & 113.0          & 112.4         & 0.57                            \\ \hline
+0.6                  & 113.2          & 110.7         & 2.25                            \\ \hline
+0.7                  & 114.1          & 109.8         & 3.79                            \\ \hline
+0.8                  & 114.3          & 110.5         & 3.35                            \\ \hline
+0.95                 & 118.4          & 115.3         & 2.67                            \\ \hline
+\end{tabular}
+\label{table1}
+\end{table}
+The simulated mean travel time was reduced by 0,57\% at 50\% road congestion, with up to 3.79\% improvement (118.4 s to 115.3 s) at 70\% of the maximum density. At higher congestion levels the vehicles could not always find the needed space in their suggested lanes, which reduces the success rate of a lane change. At a level of 0.95\% of the maximum capacity of the road, an improvement of 2.67\% in mean travel times was still detected. \\
 Similar to the travel times the reduction in pollutants peaked at 70\% road congestion. Energy consumption and CO2 emissions are reduced by around 2.2\% while CO and HC emissions are reduced by up to 17\%. Jin et al. demonstrate how connected vehicles can improve the traffic flow through microscopic actions like well coordinated lane changes. However they do not take into account different penetration rates of interconnected vehicles, which could be useful for the transition years between current and next generation cars. They only simulate their algorithm on a 3-way highway with relatively low speed limit (50 mp/h) and equally treated vehicles. Different simulation runs with trucks, or 2-way highways and  varying penetration rates of V2X technology could have given more insights into the usefulness of this approach. 
 \subsubsection{Lane drop merging assistance}
+\label{lanedrop}
 The second microscopic optimization next to optimal lane changes is the coordinated approach to a lane drop. Schuhmacher et al.\cite{1614269.1614274} provide a Merging assistance algorithm which advices drivers on the individual speed limits and merging positions ahead of a lane drop. The current traffic control strategies in front of lane drop consist of
 \begin{description}
 \item[Gradual speed limit reduction] Usually used at highway lane drops. The speed limit in front of a lane merge is decreased in several stages to achieve a harmonization of traffic with decreased frictions between vehicles and an increased traffic safety.
@@ -160,8 +201,8 @@ The second microscopic optimization next to optimal lane changes is the coordina
 \item [Early merge strategy] Warning signs indicating the lane drop are placed far ahead encouraging the drivers to switch the lane early. This reduces forced merges in the vicinity of the drop. This strategy is preferred at low traffic demands with higher speeds.  
 \end{description} 
 
-Schuhmacher et al. present a method which reduces traffic jams and increases capacity in front of a lane drop by switching to a more effective strategy with the usage of car-to-x communication for controlled merging procedures.\\ The reference scenario is based on an empiric study\cite{bertini2005empirical} of a freeway lane drop between Heathrow and London, where the passing lane of a 3-way highway transitions to two lanes. The length of the sections and the placement of traffic detectors can be seen in Figure \ref{fig:schuhmacher1} which was taken from \cite {1614269.1614274}. \\
-\begin{figure} [h]
+Schuhmacher et al. present a method which reduces traffic jams and increases the capacity in front of a lane drop by switching to a more effective strategy with the usage of V2X communication for controlled merging procedures.\\ The reference scenario is based on an empiric study\cite{bertini2005empirical} of a freeway lane drop between Heathrow and London, where the passing lane of a 3-way highway transitions to two lanes. The length of the sections and the placement of traffic detectors can be seen in Figure \ref{fig:schuhmacher1} which was taken from \cite {1614269.1614274}. \\
+\begin{figure} 
 \centering
 \epsfig{file=schuhmacher_1.png, width=3.3in}
 \caption{Reference scenario map with distance intervals}
@@ -186,7 +227,7 @@ Schuhmacher et al. simulated their algorithm and the reference scenario with the
 The maximum capacity of a lane was set to 2000 vehicles per hour. The proportion of heavy vehicles was set to 15\% and the maximum allowed speed is 112 km/h (70 mp/h). The traffic demand is increased in three stages every 30 minutes. Firstly 3000 veh/h, which is far under the capacity of 4000 veh/h of the reference scenario. Secondly the demand is increased to 3800 veh/h representing dense traffic close to the maximum capacity. And lastly 4600 veh/h which should result in heavy congestion. \\
 In the first simulation run every vehicle is equipped with an OBU and every vehicle obeys the traffic control messages. Compared to a simulation run without the usage of the merging assistance significant traffic improvements were only observed at the highest density of 4600 veh/h. The mean travel time decreased from around 112 sec/km to around 70 sec/km at the end of the simulation run. \\
 Figure \ref{fig:schuhmacher2} taken from \cite{1614269.1614274}, illustrates the travel time improvements under different penetration rates of equipped vehicles. 
-\begin{figure} [h]
+\begin{figure} 
 \centering
 \epsfig{file=schuhmacher_2.png,  width=3.3in}
 \caption{Mean flow rates for different penetration rates}
@@ -197,13 +238,14 @@ Schuhmacher et al. present a valid approach to traffic flow optimization by impl
 
 
 \subsection{Macroscopic Optimization}
+\label{macroscopic}
 In contrast to the single vehicle, microscopic optimizations of section \ref{microscopic}, this section focuses on traffic improvements on whole traffic streams.
 Applications can vary from intelligent traffic lights to intelligent speed limits and speed recommendations at uncontrolled intersections to harmonize the traffic flow. \\
-Intersections belong to the most important components of urban road networks  high accident rates and low efficiency in terms of vehicle throughput. Cooperative vehicle infrastructure systems (CVIS) focus on the improvement of safety and flow rates using Vehicle to Infrastructure (V2I) and Vehicle to Vehicle (V2V) communication. This section describes one approach for uncontrolled and one for traffic light controlled intersections. \\
+Intersections belong to the most important components of urban road networks with high accident rates and low efficiency in terms of vehicle throughput. Cooperative vehicle infrastructure systems (CVIS) focus on the improvement of safety and flow rates using Vehicle to Infrastructure (V2I) and Vehicle to Vehicle (V2V) communication. This section describes one approach for uncontrolled and one for traffic light controlled intersections. \\
 
 \subsubsection{Cooperative optimization at an uncontrolled intersection}
 \label{uncontrolled}
-Uncontrolled intersections are the most common types in urban road networks. CVIS are able to get the real-time individual vehicle states and allow the exchange of individual traffic control messages. This can be used to manipulate individual vehicles trajectories to guide them on a non colliding path through the crossing as proposed by Lee et al.\cite{lee2012development}. While this approach can be used for fully autonomous vehicles, it induces problems for self-driven vehicles wihthout accurately driven paths. \\
+Uncontrolled intersections are the most common types in urban road networks. CVIS are able to get the real-time individual vehicle states and allow the exchange of individual traffic control messages. This can be used to manipulate individual vehicles trajectories to guide them on a non colliding path through the crossing as proposed by Lee et al.\cite{lee2012development}. While this approach can be used for fully autonomous vehicles, it induces problems for self-driven vehicles without accurately driven paths. \\
 Cai et al.\cite{6957666} propose a method where drivers are guided by a cooperative negotiated "right of way" information on an installed On-Board Unit (OBU) coupled with speed guidance to preemptively solve conflicts.This reduces the intersections average vehicle delay, number of stops, length of the queue and increases the average speed of vehicles.\\
 Vehicles approaching the intersection transmit in small intervals (0.5 s) their current position, speed and desired route to the intersection's traffic controller. For each vehicle the road-side unit calculates an optimal speed, under the assumption that a minimum and maximum speed and a certain acceleration/deceleration rate exists and a minimum headway needs to be retained. These speed guidances are then sent to the OBUs in the vehicles.\\ 
 Cai et al. simulated their approach against a non cooperative intersection. Their results are shown in Figure \ref{fig:cai1}. 
@@ -232,7 +274,14 @@ Two in vehicular traffic light designs can be seen in Figure \ref{fig:trafficlig
 \caption{Different virtual traffic light designs}
 \label{fig:trafficlight1}
 \end{figure}
-This design was then tested in an urban driving simulator. To determine the driving performances Olaverri-Monreal et al. focused on speed metrics and brake activity, because the ability to adapt to new road circumstances such as traffic signs or intersections can be observed in the variation of speed. \\ From the 10 tested persons 9 declared the presented information as clear and intuitive and was not considered distracting or unsafe. The brake activity and deceleration rate differed only slightly from the simulation run with the physical traffic lights. In general the test group adapted well to the shift from physical to virtual traffic lights\\
+This design was then tested in an urban driving simulator. An in vehicle-view of an virtual traffic light is shown in Figure \ref{fig:trafficlight2}.
+\begin{figure} 
+\centering
+\epsfig{file=traffic_light2PNG.png, width=3.3in}
+\caption{In-vehicle view of the virtual traffic light projected on the windshield}
+\label{fig:trafficlight2}
+\end{figure}
+To determine the driving performances Olaverri-Monreal et al. focused on speed metrics and brake activity, because the ability to adapt to new road circumstances such as traffic signs or intersections can be observed in the variation of speed. \\ From the 10 tested persons 9 declared the presented information as clear and intuitive and was not considered distracting or unsafe. The brake activity and deceleration rate differed only slightly from the simulation run with the physical traffic lights. In general the test group adapted well to the shift from physical to virtual traffic lights\\
 
 \subsubsection{Adaptive traffic light control for priority vehicles}
 \label{trafficlights}
@@ -268,7 +317,10 @@ Different traffic intensities were simulated and the percentage of priority vehi
 \label{fig:ahmed2}
 \end{figure*}
 The amount of mean waiting steps (Figure \ref{fig:ahmed2}a)) are reduced by up to 50\% compared to the static traffic lights. The mean trip time and mean speed parameters of priority vehicles are also greatly improved using EDF and FP schedulers. Also the EDF scheduler performs slightly better than the Fixed Priority implementation.\\ 
+
+
 \subsection{Mesoscopic Optimization}
+\label{mesoscopic}
 The previously mentioned optimizations had in common that the vehicles were directly in the communication range of a single infrastructure unit (e.g. one RSU at \ref{laneselection}, the intersection control at \ref{uncontrolled} or the intelligent traffic lights at \ref{trafficlights}). For mesoscopic models, where the investigated area exceeds this communication range, a reliable and efficient method is required to exchange traffic information timely with as much vehicles as possible. As it is assumed that all V2X enabled vehicles have the ability to share their positional data (e.g. through GPS) current communication models favor Geocast over Cluster-Based or Broadcasting models. Kaiwartya et al.\cite{6776965} provide an overview and classify the current Geocast routing protocols. \\  
 With reliable and timely traffic information over large areas it is possible to identify and avoid congested roadways. Finding the fastest vehicular route to a destination has several benefits, such as reducing traffic congestion, fuel consumption and traffic emissions.\\
 Noori et al.\cite{6799873} investigated a large scale V2X enabled urban area and developed an dynamic route planning algorithm using V2X communication and real-time traffic information. \\
@@ -297,43 +349,20 @@ Figure \ref{fig:noori1} illustrates the simulated travel times for the 20 select
 \caption{Travel time of vehicles based in different traffic densities}
 \label{fig:noori1}
 \end{figure}
-A reduction of 41.12\%  in average travel time in low traffic areas (car number 1 - 7), 52,84\% for medium traffic (car number 7 - 14) and 60,79\% for high traffic areas (car number 14-20) compared to the real traffic of cologne was achieved in the simulation run. These results show that under perfect circumstances (traffic information is instantaneously broadcasted, all vehicles receive traffic information, every road segment is V2X equipped) the travel time in dense urban areas can be drastically reduced for a few selected cars. The impacts for large fleets of dynamically routed cars are not discussed. 
-\section{Discussion}
-\section{Conclusion}
+A reduction of 41.12\%  in average travel time in low traffic areas (car number 1 - 7), 52,84\% for medium traffic (car number 7 - 14) and 60,79\% for high traffic areas (car number 14-20) compared to the real traffic of cologne was achieved in the simulation run. These results show that under perfect circumstances (traffic information is instantaneously broadcasted, all vehicles receive traffic information, every road segment is V2X equipped) the travel time in dense urban areas can be drastically reduced for a few selected cars. The impacts when large fleets of dynamically routed cars use this system are not discussed. \\ The obtained results are likewise only achievable in simulation runs, because the assumption that every single road segment is equipped with a RSU at the start and end can realistically not be achieved in the near future. 
 
+
+\section{Discussion}
+The research in ITS is still in its early stages. Foundations for large scale VANETs such as routing protocols and security concerns need to be ensured before the focus can be shifted to more complex traffic safety and traffic management systems. Secondly applications to traffic flow optimizations can currently only be simulated, which gives a certain blur to the expressiveness of the results. Still the provided techniques forecast the immense opportunities that Connected Vehicles can give to traffic safety and traffic efficiency. \\
+Some topics that were not addressed in the discussed applications but need to be evaluated is firstly the presence of traffic participants such as bicycles and pedestrians. Especially the approach to in-vehicular traffic lights does not conform well with non-motorized and unconnected road members. An exemplary solution, with the increasing possession of smart phones, could be to involve mobile data into the creation of traffic light control messages. \\
+Lastly it needs to be considered how well traffic control advices are accepted and carried out. For example the question arises how well the optimal lane change algorithm performs with single individuals ignoring or even acting oppositely to the advices.   
+
+\section{Conclusion}
+This work provides an overview over some example applications to traffic flow optimization using connected vehicles. These applications were divided into different classes based on the type of optimization. For each granularity one or more systems were examined and their results were presented. 
 
 
 %%%%%%%%%%%%%%%%%%%%
 
-\section{Erster Entwurf veraltet}
-
-What is traffic flow optimiziation. What is needed for Traffic flow optimization (Traffic detection?) Traffic Prediction \cite{6856591}. \\ How to achieve optimization Self-organization?\cite{5625236} \\Overview of next subsections Traffic Control with its subsubsections Traffic Lights and Traffic Management Systems. \\
-Economic Driving: Improvements such as reduction of emissions via V2V communication.  \\
-Can V2V  improve traffic?  Yes example\cite{6856462}
-\subsection{Traffic Control}
-Real-time lane selection\cite{6856515} \\
-Speed control at lane drop \cite{1614269.1614274}\\
-Noch ein zusätzliches Paper finden\\
-\subsubsection{Virtual and Adaptive Traffic Lights}
-In-vehicle virtual traffic lights\cite{ferreira2010self}  \cite{gradinescu2007adaptive} \\ 
-Dynamic lane grouping \cite{6338840} \\
-Dynamic traffic lights with emergency/high priority vehicles \cite{6799827} \\
-\subsubsection{Route Guidance and Traffic Management Systems}
-Traffic Prediction Models \cite{6685576} \\
-Graphical Route Guidance \cite{5410169} \\
-Vanet based route guidance \cite{6799873}
-Finding optimal routes through traffic with v2v  find paper \\
-Navigation System paper finden\\
-\subsection{Economic Driving}
-V2V communication helps reducing emissions. find more papers \\
-Optimal trajectory and brake/acceleration \cite{6856456} 
-\subsection{Discussion and Comparison} Compare methods discuss benefits and disadvantages.
-\subsection{Conclusions}
-Improvement through usage of v2v communication. 
-%\end{document}  % This is where a 'short' article might terminate
-
-%ACKNOWLEDGMENTS are optional
-\subsection{Acknowledgments}
 
 
 %

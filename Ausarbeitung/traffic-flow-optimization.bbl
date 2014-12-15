@@ -1,5 +1,10 @@
 \begin{thebibliography}{10}
 
+\bibitem{eutraffic}
+European commission. white paper ‘european transport policy for 2010: time to
+  decide’.
+\newblock Luxemburg 2001.
+
 \bibitem{6799827}
 A.~Ahmed, R.~Arshad, S.~Mahmud, G.~Khan, and H.~Al-Raweshidy.
 \newblock Evaluation of earliest deadline based schedulers for reduction of
@@ -7,17 +12,16 @@ A.~Ahmed, R.~Arshad, S.~Mahmud, G.~Khan, and H.~Al-Raweshidy.
 \newblock In {\em Connected Vehicles and Expo (ICCVE), 2013 International
   Conference on}, pages 404--409, Dec 2013.
 
+\bibitem{al2014comprehensive}
+S.~Al-Sultan, M.~M. Al-Doori, A.~H. Al-Bayatti, and H.~Zedan.
+\newblock A comprehensive survey on vehicular ad hoc network.
+\newblock {\em Journal of network and computer applications}, 37:380--392,
+  2014.
+
 \bibitem{bertini2005empirical}
 R.~L. Bertini and M.~T. Leal.
 \newblock Empirical study of traffic features at a freeway lane drop.
 \newblock {\em Journal of Transportation Engineering}, 131(6):397--407, 2005.
-
-\bibitem{6856456}
-J.~Brembeck and C.~Winter.
-\newblock Real-time capable path planning for energy management systems in
-  future vehicle architectures.
-\newblock In {\em Intelligent Vehicles Symposium Proceedings, 2014 IEEE}, pages
-  599--604, June 2014.
 
 \bibitem{6957666}
 B.~Cai, Z.~Zheng, W.~ShangGuan, and J.~Wang.
@@ -25,26 +29,6 @@ B.~Cai, Z.~Zheng, W.~ShangGuan, and J.~Wang.
   speed guidance and information interaction.
 \newblock In {\em Intelligent Transportation Systems (ITSC), 2014 IEEE 17th
   International Conference on}, pages 57--62, Oct 2014.
-
-\bibitem{ferreira2010self}
-M.~Ferreira, R.~Fernandes, H.~Concei{\c{c}}{\~a}o, W.~Viriyasitavat, and O.~K.
-  Tonguz.
-\newblock Self-organized traffic control.
-\newblock In {\em Proceedings of the seventh ACM international workshop on
-  VehiculAr InterNETworking}, pages 85--90. ACM, 2010.
-
-\bibitem{gradinescu2007adaptive}
-V.~Gradinescu, C.~Gorgorin, R.~Diaconescu, V.~Cristea, and L.~Iftode.
-\newblock Adaptive traffic lights using car-to-car communication.
-\newblock In {\em Vehicular Technology Conference, 2007. VTC2007-Spring. IEEE
-  65th}, pages 21--25. IEEE, 2007.
-
-\bibitem{5410169}
-G.~HongCheng, W.~Qing, and F.~Bing-Quan.
-\newblock Graphical route information panel and macroscopic simulation based
-  investigation of its control benefits.
-\newblock In {\em Control and Automation, 2009. ICCA 2009. IEEE International
-  Conference on}, pages 1454--1459, Dec 2009.
 
 \bibitem{6856515}
 Q.~Jin, G.~Wu, K.~Boriboonsomsin, and M.~Barth.
@@ -73,13 +57,6 @@ J.~Lee and B.~Park.
 \newblock {\em Intelligent Transportation Systems, IEEE Transactions on},
   13(1):81--90, 2012.
 
-\bibitem{6685576}
-Z.~Liang and Y.~Wakahara.
-\newblock City traffic prediction based on real-time traffic information for
-  intelligent transport systems.
-\newblock In {\em ITS Telecommunications (ITST), 2013 13th International
-  Conference on}, pages 378--383, Nov 2013.
-
 \bibitem{6799873}
 H.~Noori and M.~Valkama.
 \newblock Impact of vanet-based v2x communication using ieee 802.11p on
@@ -93,19 +70,11 @@ C.~Olaverri-Monreal, P.~Gomes, M.~Silveria, and M.~Ferreira.
 \newblock In {\em Information Systems and Technologies (CISTI), 2012 7th
   Iberian Conference on}, pages 1--6, June 2012.
 
-\bibitem{6856462}
-E.~Paikari, S.~Tahmasseby, and B.~Far.
-\newblock A simulation-based benefit analysis of deploying connected vehicles
-  using dedicated short range communication.
-\newblock In {\em Intelligent Vehicles Symposium Proceedings, 2014 IEEE}, pages
-  980--985, June 2014.
-
-\bibitem{6856591}
-C.~Ruhhammer, N.~Hirsenkorn, F.~Klanner, and C.~Stiller.
-\newblock Crowdsourced intersection parameters: A generic approach for
-  extraction and confidence estimation.
-\newblock In {\em Intelligent Vehicles Symposium Proceedings, 2014 IEEE}, pages
-  581--587, June 2014.
+\bibitem{schrank2012tti}
+D.~Schrank, B.~Eisele, and T.~Lomax.
+\newblock Tti’s 2012 urban mobility report.
+\newblock {\em Proceedings of the 2012 annual urban mobility report. Texas A\&M
+  Transportation Institute, Texas, USA}, 2012.
 
 \bibitem{1614269.1614274}
 H.~Schumacher, C.~Priemer, and E.~N. Slottke.
@@ -120,23 +89,10 @@ M.~V.~E. Simulator.
 \newblock User guide for moves2010a.
 \newblock Technical report, EPA-420-B, 2010.
 
-\bibitem{5625236}
-G.~Slager and M.~Milano.
-\newblock Urban traffic control system using self-organization.
-\newblock In {\em Intelligent Transportation Systems (ITSC), 2010 13th
-  International IEEE Conference on}, pages 255--260, Sept 2010.
-
 \bibitem{systematics2005traffic}
 C.~Systematics.
 \newblock {\em Traffic congestion and reliability: Trends and advanced
   strategies for congestion mitigation}, volume~6.
 \newblock Federal Highway Administration, 2005.
-
-\bibitem{6338840}
-G.~Wu, K.~Boriboonsomsin, L.~Zhang, and M.~Barth.
-\newblock Simulation-based benefit evaluation of dynamic lane grouping
-  strategies at isolated intersections.
-\newblock In {\em Intelligent Transportation Systems (ITSC), 2012 15th
-  International IEEE Conference on}, pages 1038--1043, Sept 2012.
 
 \end{thebibliography}

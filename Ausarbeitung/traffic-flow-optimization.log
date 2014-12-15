@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.7)  15 DEC 2014 00:58
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.7)  15 DEC 2014 22:15
 entering extended mode
 **C:/Users/leutheus/Desktop/TrafficFlowOptimiziation/Ausarbeitung/traffic-flow-
 optimization.tex
@@ -416,209 +416,208 @@ LaTeX Font Info:    Try loading font information for T1+aer on input line 100.
 ("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\ae\t1aer.fd"
 File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
 )))
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
+\bigstrutjot=\dimen123
+)
 (C:\Users\leutheus\Desktop\TrafficFlowOptimiziation\Ausarbeitung\traffic-flow-o
 ptimization.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
 
 (C:\Users\leutheus\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count109
-\scratchdimen=\dimen123
+\scratchdimen=\dimen124
 \scratchbox=\box30
 \nofMPsegments=\count110
 \nofMParguments=\count111
 \everyMPshowfont=\toks38
 \MPscratchCnt=\count112
-\MPscratchDim=\dimen124
+\MPscratchDim=\dimen125
 \MPnumerator=\count113
 \makeMPintoPDFobject=\count114
 \everyMPtoPDFconversion=\toks39
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 121.
+LaTeX Font Info:    Try loading font information for U+msa on input line 122.
  ("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 121.
+LaTeX Font Info:    Try loading font information for U+msb on input line 122.
 
 ("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 121.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 122.
 
 ("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-Overfull \hbox (4.5074pt too wide) in paragraph at lines 138--144
+Underfull \hbox (badness 10000) in paragraph at lines 139--139
+[][]\T1/aer/m/n/9 http://www.bmw.de/de/topics/faszination-
+ []
+
+<google_traffic1.png, id=1, 1230.09563pt x 753.5653pt>
+File: google_traffic1.png Graphic file (type png)
+
+<use google_traffic1.png>
+Package pdftex.def Info: google_traffic1.png used on input line 142.
+(pdftex.def)             Requested size: 238.49121pt x 146.0995pt.
+ [1{C:/Users/leutheus/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+
+ <C:/Users/leutheus/Desktop/TrafficFlowOptimiziation/Ausarbeitung/google_traffi
+c1.png>]
+Overfull \hbox (6.33559pt too wide) in paragraph at lines 155--156
+[]\T1/aer/m/n/9 The net-work den-sity in VANET
+ []
+
+
+Overfull \hbox (8.36847pt too wide) in paragraph at lines 157--158
+[]\T1/aer/m/n/9 Vehicles can be equipped with
+ []
+
+
+Overfull \hbox (4.5074pt too wide) in paragraph at lines 162--168
 \T1/aer/m/n/9 Microscopic op-ti-miza-tions fo-cus on im-prov-ing the mean trave
 l
  []
 
 
-Overfull \hbox (5.07439pt too wide) in paragraph at lines 138--144
+Overfull \hbox (5.07439pt too wide) in paragraph at lines 162--168
 \T1/aer/m/n/9 through-put and re-duced travel times for a given traf-fic stream
 .
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 138--144
-
- []
-
-[1{C:/Users/leutheus/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
-
-
-]
-<schuhmacher_1.png, id=12, 1421.31pt x 349.305pt>
+[2] <schuhmacher_1.png, id=20, 1421.31pt x 349.305pt>
 File: schuhmacher_1.png Graphic file (type png)
  <use schuhmacher_1.png>
-Package pdftex.def Info: schuhmacher_1.png used on input line 166.
+Package pdftex.def Info: schuhmacher_1.png used on input line 207.
 (pdftex.def)             Requested size: 238.49121pt x 58.60822pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[2 <C:/Users/leutheus/Desktop/TrafficFlowOptimiziation/Ausarbeitung/schuhmacher
-_1.png>] <schuhmacher_2.png, id=21, 918.43124pt x 657.2053pt>
+[3 <C:/Users/leutheus/Desktop/TrafficFlowOptimiziation/Ausarbeitung/schuhmacher
+_1.png>] <schuhmacher_2.png, id=25, 918.43124pt x 657.2053pt>
 File: schuhmacher_2.png Graphic file (type png)
 
 <use schuhmacher_2.png>
-Package pdftex.def Info: schuhmacher_2.png used on input line 191.
+Package pdftex.def Info: schuhmacher_2.png used on input line 232.
 (pdftex.def)             Requested size: 238.49121pt x 170.65875pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 200--203
+Underfull \hbox (badness 10000) in paragraph at lines 242--245
 
  []
 
 
-Overfull \hbox (2.93309pt too wide) in paragraph at lines 204--204
+Overfull \hbox (2.93309pt too wide) in paragraph at lines 246--246
 []\subsecfnt Cooperative op-ti-miza-tion at an un-con-trolled in-
  []
 
-<cai_1.png, id=22, 1127.71312pt x 234.1247pt>
+<cai_1.png, id=26, 1127.71312pt x 234.1247pt>
 File: cai_1.png Graphic file (type png)
  <use cai_1.png>
-Package pdftex.def Info: cai_1.png used on input line 212.
+Package pdftex.def Info: cai_1.png used on input line 254.
 (pdftex.def)             Requested size: 491.43622pt x 102.02917pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 206--218
+Underfull \hbox (badness 10000) in paragraph at lines 248--260
 
  []
 
-[3 <C:/Users/leutheus/Desktop/TrafficFlowOptimiziation/Ausarbeitung/schuhmacher
+[4 <C:/Users/leutheus/Desktop/TrafficFlowOptimiziation/Ausarbeitung/schuhmacher
 _2.png>]
-Overfull \hbox (2.40213pt too wide) in paragraph at lines 223--224
+Overfull \hbox (2.40213pt too wide) in paragraph at lines 265--266
 []\T1/aer/m/n/9 To avoid a road vi-sion ob-struc-
  []
 
 
-Overfull \hbox (7.29813pt too wide) in paragraph at lines 224--225
+Overfull \hbox (7.29813pt too wide) in paragraph at lines 266--267
 []\T1/aer/m/n/9 The main-te-nance of the sys-
  []
 
-<traffic_light1.png, id=27, 423.83344pt x 419.31656pt>
+<traffic_light1.png, id=32, 423.83344pt x 419.31656pt>
 File: traffic_light1.png Graphic file (type png)
 
 <use traffic_light1.png>
-Package pdftex.def Info: traffic_light1.png used on input line 231.
+Package pdftex.def Info: traffic_light1.png used on input line 273.
 (pdftex.def)             Requested size: 238.49121pt x 235.94815pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 228--236
+<traffic_light2PNG.png, id=33, 917.67844pt x 583.42969pt>
+File: traffic_light2PNG.png Graphic file (type png)
+
+<use traffic_light2PNG.png>
+Package pdftex.def Info: traffic_light2PNG.png used on input line 280.
+(pdftex.def)             Requested size: 238.49121pt x 151.61691pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 270--285
 
  []
 
-[4 <C:/Users/leutheus/Desktop/TrafficFlowOptimiziation/Ausarbeitung/cai_1.png> 
-<C:/Users/leutheus/Desktop/TrafficFlowOptimiziation/Ausarbeitung/traffic_light1
-.png>] <ahmed1.png, id=33, 594.72188pt x 568.37344pt>
+[5 <C:/Users/leutheus/Desktop/TrafficFlowOptimiziation/Ausarbeitung/cai_1.png>]
+<ahmed1.png, id=38, 594.72188pt x 568.37344pt>
 File: ahmed1.png Graphic file (type png)
  <use ahmed1.png>
-Package pdftex.def Info: ahmed1.png used on input line 259.
+Package pdftex.def Info: ahmed1.png used on input line 308.
 (pdftex.def)             Requested size: 238.49121pt x 227.91774pt.
 
-<ahmed2.png, id=34, 1155.56718pt x 299.61937pt>
+<ahmed2.png, id=39, 1155.56718pt x 299.61937pt>
 File: ahmed2.png Graphic file (type png)
  <use ahmed2.png>
-Package pdftex.def Info: ahmed2.png used on input line 266.
+Package pdftex.def Info: ahmed2.png used on input line 315.
 (pdftex.def)             Requested size: 491.43622pt x 127.42113pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--271
+Underfull \hbox (badness 10000) in paragraph at lines 303--320
 
  []
 
-[5 <C:/Users/leutheus/Desktop/TrafficFlowOptimiziation/Ausarbeitung/ahmed1.png>
-]
-Overfull \hbox (4.15689pt too wide) in paragraph at lines 284--288
+[6 <C:/Users/leutheus/Desktop/TrafficFlowOptimiziation/Ausarbeitung/traffic_lig
+ht1.png> <C:/Users/leutheus/Desktop/TrafficFlowOptimiziation/Ausarbeitung/traff
+ic_light2PNG.png>] [7 <C:/Users/leutheus/Desktop/TrafficFlowOptimiziation/Ausar
+beitung/ahmed2.png> <C:/Users/leutheus/Desktop/TrafficFlowOptimiziation/Ausarbe
+itung/ahmed1.png>]
+Overfull \hbox (4.15689pt too wide) in paragraph at lines 336--340
 []\T1/aer/m/n/9 With these re-quire-ments the road net-work forms a weighted
  []
 
 
-Overfull \hbox (1.25836pt too wide) in paragraph at lines 284--288
+Overfull \hbox (1.25836pt too wide) in paragraph at lines 336--340
 \T1/aer/m/n/9 Their sim-u-la-tion sce-nario in-ves-ti-gates the im-pact of the 
 route
  []
 
 
-Overfull \hbox (2.60924pt too wide) in paragraph at lines 290--291
+Overfull \hbox (2.60924pt too wide) in paragraph at lines 342--343
 []\T1/aer/m/n/9 The real traf-fic of cologne is sim-u-lated with over 250.000
  []
 
-<noori1.png, id=39, 836.3747pt x 590.205pt>
+<noori1.png, id=51, 836.3747pt x 590.205pt>
 File: noori1.png Graphic file (type png)
  <use noori1.png>
-Package pdftex.def Info: noori1.png used on input line 296.
+Package pdftex.def Info: noori1.png used on input line 348.
 (pdftex.def)             Requested size: 238.49121pt x 168.29121pt.
- [6 <C:/Users/leutheus/Desktop/TrafficFlowOptimiziation/Ausarbeitung/ahmed2.png
-> <C:/Users/leutheus/Desktop/TrafficFlowOptimiziation/Ausarbeitung/noori1.png>]
-
-Underfull \hbox (badness 10000) in paragraph at lines 314--317
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 318--321
-
- []
-
-
-Overfull \hbox (12.00394pt too wide) in paragraph at lines 322--327
-\T1/aer/m/n/9 Vanet based route guid-ance [13] Find-ing op-ti-mal routes throug
-h
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 322--327
-
- []
-
 
 (C:\Users\leutheus\Desktop\TrafficFlowOptimiziation\Ausarbeitung\traffic-flow-o
-ptimization.bbl
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7])
-[8
+ptimization.bbl [8 <C:/Users/leutheus/Desktop/TrafficFlowOptimiziation/Ausarbei
+tung/noori1.png>]) [9
 
 ]
 (C:\Users\leutheus\Desktop\TrafficFlowOptimiziation\Ausarbeitung\traffic-flow-o
 ptimization.aux) ) 
 Here is how much of TeX's memory you used:
- 2696 strings out of 493921
- 32373 string characters out of 3144867
- 91250 words of memory out of 3000000
- 5926 multiletter control sequences out of 15000+200000
+ 2719 strings out of 493921
+ 32926 string characters out of 3144867
+ 97479 words of memory out of 3000000
+ 5943 multiletter control sequences out of 15000+200000
  54309 words of font info for 71 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 41i,10n,28p,939b,252s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,10n,28p,951b,252s stack positions out of 5000i,500n,10000p,200000b,50000s
 {D:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8
 r.enc}<D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.p
 fb><D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb>
@@ -631,9 +630,9 @@ les (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><D:/Program Files (x86
  2.9/fonts/type1/urw/times/utmb8a.pfb><D:/Program Files (x86)/MiKTeX 2.9/fonts/
 type1/urw/times/utmr8a.pfb><D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/t
 imes/utmri8a.pfb>
-Output written on traffic-flow-optimization.pdf (8 pages, 1082872 bytes).
+Output written on traffic-flow-optimization.pdf (9 pages, 3051953 bytes).
 PDF statistics:
- 89 PDF objects out of 1000 (max. 8388607)
+ 96 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
